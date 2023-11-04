@@ -1,0 +1,66 @@
+Alien Shooter Game
+
+Implement first a menu for the player to choose from...
+
+The menu include: 
+    -Play Game
+    -Credits
+    -Exit
+
+If the Player choose Play we will start the game:
+
+*****Starting the game*****
+Player will see a border indicating the border of the game
+This game the player will be a certain box type that will shoot some type of shoot that will make the player score
+                                                              ###
+Player will be a struct having power, indicies which will be #####
+                                                            #######    this will be the design of the player
+                                                            0     0 
+                                                            0     0
+Player will have also score indicating the score of the player
+
+
+Enemies will have strength and desingned as          88888 
+                                                      888
+                                                       8
+
+
+
+
+tasks:
+1- create the menu.
+finished
+
+2-start by creating the border of the game
+
+3-design the player
+
+designing the player{
+    struct point that have x as the row and y as the column
+
+    struct player that have array of points where the size of the array will be 18 (18 points)
+    player will have score and power
+
+    we will start by writing a method to initialize the values of the array of points, where each point will have x and y calculated
+    the first three places in the array [0,1,2] will be for the head of the ship (placed at N/2 -1) 
+    the row below wll start at the index of 0-1 and so on
+    the row below will start at 3-1 and so on
+
+    we need to write a method to place the player on the 2d screen where it will take the array of coordinates and 
+    start placing each one by its value.
+
+    we need a method to move the player
+    in this method we need to move up down left or right by moving the whole player at once
+    this require to decrement and increment each value of the points by the same.
+
+
+
+    we put the player in a library named player.h
+
+    it wil contain operations on player such as move that will move the whole player 
+    place player that will take a 1d array of coordinates and translate it onto 2d
+
+    shoot which will contain a thread for the game to run while the user is inputting several inputs
+
+
+}
